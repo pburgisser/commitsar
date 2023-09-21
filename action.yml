@@ -11,3 +11,5 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
+  env:
+    COMMITSAR_CONFIG_PATH: ${{ inputs.config }} 
